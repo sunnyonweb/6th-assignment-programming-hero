@@ -24,7 +24,7 @@
     <header>
         <!-- navbar -->
         <nav class="bg-[#15803D] ">
-            <div class="navbar  shadow-sm w-11/12 mx-auto">
+            <div class="navbar w-11/12 mx-auto">
             <div class="navbar-start">
                 <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -32,15 +32,15 @@
                 </div>
                 <ul
                     tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
 
-                    <li>
+                    <li class="hover:bg-gray-300">
                         <a href="#">About</a>
                     </li>
-                    <li>
+                    <li class="hover:bg-gray-300">
                         <a href="#">Gallery</a>
                     </li>
-                    <li>
+                    <li class="hover:bg-gray-300">
                         <a href="#">Plant a Tree</a>
                     </li>
 
@@ -74,13 +74,13 @@
             <img
                 src="./assets/hero-leaf1.png"
                 alt="Leaf Left/Top"
-                class="w-24 sm:w-32 md:w-40 lg:w-52 xl:w-64 h-auto mx-auto
+                class="w-24 sm:w-32 md:w-52 lg:w-60 xl:w-72 h-auto mx-auto
                     block sm:absolute sm:left-0 sm:bottom-0"
             />
 
             <!-- Content -->
             <div class="flex flex-col items-center gap-4">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#14532D]">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1F2937]">
                 Plant a Tree, Grow a Future
                 </h1>
                 
@@ -97,12 +97,31 @@
             <img
                 src="./assets/hero-leaf2.png"
                 alt="Leaf Right/Bottom"
-                class="w-24 sm:w-32 md:w-40 lg:w-52 xl:w-64 h-auto mx-auto mt-4
+                class="w-24 sm:w-32 md:w-52 lg:w-60 xl:w-72 h-auto mx-auto mt-4
                     block sm:absolute sm:right-0 sm:bottom-0 sm:mt-0"
             />
 
         </section>
     </header>
-    
+    <!-- Card Section -->
+     <section></section>
+     <!-- About Section -->
+      <section class=" py-20 w-11/12 mx-auto">
+
+        <h2 class="text-center text-2xl font-semibold mb-10">About the Campaign</h2>
+        <div class="w-3/5 mx-auto flex justify-center items-center gap-7">
+            <div class="w-2/5">
+                <img src="./assets/about.png" alt="" class="w ">
+            </div>
+            <div class="flex-1">
+                <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+                <ul class="list-disc list-inside space-y-2 text-left mt-5 ml-5">
+                    <li>Restoration of natural habitats</li>
+                    <li>Improvement of air quality</li>
+                    <li>Support for local communities</li>
+                </ul>
+            </div>
+        </div>
+      </section>
 </body>
 </html>
