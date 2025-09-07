@@ -68,30 +68,40 @@
         </nav>
         <!-- banner -->
          <section 
-         class="relative bg-[#CFF0DC] h-80 flex flex-col justify-center items-center gap-3 overflow-visible text-center">
-             <!-- BG image -->
+            class="relative bg-[#CFF0DC] min-h-[20rem] md:min-h-[25rem] flex flex-col justify-center items-center gap-4 text-center px-4 overflow-hidden">
+
+            <!-- image-1 -->
             <img
                 src="./assets/hero-leaf1.png"
-                alt="Left leaf"
-                class="hidden sm:block absolute left-0 bottom-0 object-contain pointer-events-none select-none h-40
-                lg:h-44 xl:h-4/5 md:h-2/5"
-            />
-            <img
-                src="./assets/hero-leaf2.png"
-                alt="Right leaf"
-                class="hidden sm:block absolute right-0 bottom-0 object-contain pointer-events-none select-none h-40
-                lg:h-44 xl:h-4/5 md:h-2/5"
+                alt="Leaf Left/Top"
+                class="w-24 sm:w-32 md:w-40 lg:w-52 xl:w-64 h-auto mx-auto
+                    block sm:absolute sm:left-0 sm:bottom-0"
             />
 
-            <h1 class="text-4xl font-bold">Plant a Tree, Grow a Future</h1>
-            <p>
-                Join our mission to plant 1 million trees and make the Earth greener for future <br>
-                generations.
-            </p>
-            <button class="bg-[#FACC15] py-2 px-6 rounded-3xl text-[#15803D] font-semibold">
+            <!-- Content -->
+            <div class="flex flex-col items-center gap-4">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#14532D]">
+                Plant a Tree, Grow a Future
+                </h1>
+                
+                <p class="text-[#1F2937] max-w-2xl">
+                Join our mission to plant 1 million trees and make the Earth greener for future generations.
+                </p>
+                
+                <button class="bg-[#FACC15] py-2 px-6 rounded-3xl text-[#15803D] font-semibold hover:bg-yellow-400 transition">
                 Get Involved
-            </button>
-         </section>
+                </button>
+            </div>
+
+            <!-- image-2 -->
+            <img
+                src="./assets/hero-leaf2.png"
+                alt="Leaf Right/Bottom"
+                class="w-24 sm:w-32 md:w-40 lg:w-52 xl:w-64 h-auto mx-auto mt-4
+                    block sm:absolute sm:right-0 sm:bottom-0 sm:mt-0"
+            />
+
+        </section>
     </header>
     
 </body>
