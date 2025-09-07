@@ -4,8 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
+
+    <!-- Tailwind & Deisy UI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- FontAwsome Icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css Style Sheet -->
+      <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="bg-[#f0fdf4]">
+    <header>
+        <!-- navbar -->
+        <nav class="bg-[#15803D] ">
+            <div class="navbar  shadow-sm w-11/12 mx-auto">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Plant a Tree</a>
+                    </li>
+
+                </ul>
+                </div>
+                <a href="#" class="text-xl font-semibold text-white">Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a href="#" class="text-white">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white">Plant a Tree</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="bg-[#FACC15] py-2 px-6 rounded-3xl text-[#15803D]">Plant a Tree</a>
+            </div>
+            </div>
+        </nav>
+        <!-- banner -->
+         <section 
+         class="relative bg-[#CFF0DC] h-80 flex flex-col justify-center items-center gap-3 overflow-visible text-center">
+             <!-- BG image -->
+            <img
+                src="./assets/hero-leaf1.png"
+                alt="Left leaf"
+                class="hidden sm:block absolute left-0 bottom-0 object-contain pointer-events-none select-none h-40
+                lg:h-44 xl:h-4/5 md:h-2/5"
+            />
+            <img
+                src="./assets/hero-leaf2.png"
+                alt="Right leaf"
+                class="hidden sm:block absolute right-0 bottom-0 object-contain pointer-events-none select-none h-40
+                lg:h-44 xl:h-4/5 md:h-2/5"
+            />
+
+            <h1 class="text-4xl font-bold">Plant a Tree, Grow a Future</h1>
+            <p>
+                Join our mission to plant 1 million trees and make the Earth greener for future <br>
+                generations.
+            </p>
+            <button class="bg-[#FACC15] py-2 px-6 rounded-3xl text-[#15803D] font-semibold">
+                Get Involved
+            </button>
+         </section>
+    </header>
     
 </body>
 </html>
