@@ -27,8 +27,8 @@
             <div class="navbar w-11/12 mx-auto">
             <div class="navbar-start">
                 <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                <div tabindex="0" role="button" class="mr-3  lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                 </div>
                 <ul
                     tabindex="0"
@@ -110,26 +110,60 @@
         <!-- 1st section -->
             <div class="col-span-1 py-4 px-2">
                     <h3 class="text-xl mb-4 font-semibold text-center md:text-left">Categories</h3>
-                    <div id="categories-div" class="flex flex-row flex-wrap md:flex-col gap-5 justify-center  ">
+                    <div id="category-list" class="flex flex-row flex-wrap md:flex-col gap-5 justify-center  ">
 
                     </div>
                 </div>
 
                 <!-- 2nd section -->
-                <div class="col-span-1 md:col-span-2 lg:col-span-3 bg-blue-200 p-4 text-center ">
-                    <p>
-                        Section 2 (3/5 on large, 1/2 on md, full on mobile)
-                    </p>
+                <div  class="col-span-1 md:col-span-2 lg:col-span-3 p-4 text-center grid-cols-1 sm:grid-cols-3 ">
+                    
+                    <div id="card-container" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 items-stretch text-pretty ">
+
+                    </div>
+
+                    <!-- <div class="absolute inset-0 bg-white bg-opacity-60 z-10 flex items-center justify-center">
+                        <span class="loading loading-spinner loading-xl"></span>
+                    </div> -->
+
                 </div>
 
                 <!-- 3rd section -->
-                <div class="col-span-1 md:col-span-3 lg:col-span-1 bg-yellow-200 p-4 text-center">
-                    <p>
-                        Section 3 (1/5)
-                    </p>
+                <div class="col-span-1 md:col-span-3 lg:col-span-1 p-4 text-left bg-white rounded-xl">
+                    <div class="p-1 rounded-lg  w-full max-w-xs">
+                        <h2 class="text-lg font-semibold mb-4">Cart</h2>
+                    </div>
+                    <div id="cart-container">
+
+                    </div>
+                    <div id="cart-total" class="border-t border-gray-200 pt-2  flex justify-between">
+        
+                        <span>Total:</span>
+                        <span class="font-semibold text-lg">৳ <span id="total-price">0</span></span>
+                    </div>
                 </div>
             </div>
      </section>
+
+     <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="">
+            
+
+
+
+            </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+
         <!-- About Section -->
       <section class="py-20 w-11/12 mx-auto">
             <h2 class="text-center text-2xl font-semibold mb-10">
@@ -171,7 +205,7 @@
                     <!-- card-1 -->
                     <div class="text-center bg-white rounded-lg py-8 w-72 xl:w-96 shadow-sm">
                         <div class="text-2xl font-bold text-[#15803D]">
-                            0k+
+                            500k+
                         </div>
                         <p class="text-[#1F2937]">
                             Trees Planted
@@ -180,7 +214,7 @@
                     <!-- card-2 -->
                     <div class="text-center bg-white py-8 rounded-lg w-72 xl:w-96 shadow-sm">
                         <div class="text-2xl font-bold text-[#15803D]">
-                            0+
+                            120+
                         </div>
                         <p class="text-[#1F2937]">
                             Communities Involved
@@ -189,7 +223,7 @@
                     <!-- card-3 -->
                     <div class="text-center bg-white py-8 w-72 rounded-lg xl:w-96 shadow-sm">
                         <div class="text-2xl font-bold text-[#15803D]">
-                            0+
+                            30+
                         </div>
                         <p class="text-[#1F2937]">
                             Countries Reached
